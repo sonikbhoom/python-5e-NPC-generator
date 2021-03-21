@@ -8,8 +8,8 @@ class Colors:
     c_header = '\033[95m'
     ok_blue = '\033[94m'
     ok_green = '\033[92m'
-    _warning = '\033[93m'
-    _fail = '\033[91m'
+    c_warning = '\033[93m'
+    c_fail = '\033[91m'
     end_c = '\033[0m'
 
     def disable(self):
@@ -17,8 +17,8 @@ class Colors:
         self.c_header = ''
         self.ok_blue = ''
         self.ok_green = ''
-        self._warning = ''
-        self._fail = ''
+        self.c_warning = ''
+        self.c_fail = ''
         self.end_c = ''
 
 char_maps = {}
