@@ -53,7 +53,16 @@ def genstats():
 def nice_print(character):
     # pretty up the presentation of the character stats
     # print(character)
+    limiter = ''
     stat_total = (character['str'] + character['dex'] + character['con'] + character['int'] + character['wis'] + character['cha'] )
+    if (stat_total <= 64):
+        limiter = 'weak'
+    elif ((stat_total > 64) and (stat_total < 80)):
+        limiter = 'medium'
+    elif (stat_total >= 80):
+        limiter = 'strong'
+    elif (stat_total > 100):
+        limiter = 'epic'
     print("%sSTR%s : %s%s%s" % (bcolors.OKBLUE,bcolors.ENDC,bcolors.OKGREEN,character['str'],bcolors.ENDC))
     print("%sDEX%s : %s%s%s" % (bcolors.OKBLUE,bcolors.ENDC,bcolors.OKGREEN,character['dex'],bcolors.ENDC))
     print("%sCON%s : %s%s%s" % (bcolors.OKBLUE,bcolors.ENDC,bcolors.OKGREEN,character['con'],bcolors.ENDC))
@@ -61,6 +70,7 @@ def nice_print(character):
     print("%sWIS%s : %s%s%s" % (bcolors.OKBLUE,bcolors.ENDC,bcolors.OKGREEN,character['wis'],bcolors.ENDC))
     print("%sCHA%s : %s%s%s" % (bcolors.OKBLUE,bcolors.ENDC,bcolors.OKGREEN,character['cha'],bcolors.ENDC))
     print("%sTotal Points%s : %s%s%s" % (bcolors.OKBLUE,bcolors.ENDC,bcolors.OKGREEN,stat_total,bcolors.ENDC))
+    print("%sStats Rating%s : %s%s%s" % (bcolors.OKBLUE,bcolors.ENDC,bcolors.OKGREEN,limiter,bcolors.ENDC))
     print("")
 
 def main(character_type):
