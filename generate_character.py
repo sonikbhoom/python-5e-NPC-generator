@@ -70,7 +70,7 @@ def nice_print(character):
     print("%sINT%s : %s%s%s" % (Colors.ok_blue,Colors.end_c,Colors.ok_green,character['int'],Colors.end_c))
     print("%sWIS%s : %s%s%s" % (Colors.ok_blue,Colors.end_c,Colors.ok_green,character['wis'],Colors.end_c))
     print("%sCHA%s : %s%s%s" % (Colors.ok_blue,Colors.end_c,Colors.ok_green,character['cha'],Colors.end_c))
-    print("Total Points : %s" % (stat_total)
+    print("Total Points : %s" % (stat_total))
     print("%sStats Rating%s : %s%s%s" % (Colors.ok_blue,Colors.end_c,Colors.ok_green,limiter,Colors.end_c))
     print("")
 
