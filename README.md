@@ -8,7 +8,7 @@ TODO: add stats limiter (weak, medium, strong, epic) option
 10000 Interations:
 
 
-![image](https://user-images.githubusercontent.com/21292601/111924451-07b75d00-8a7b-11eb-98ef-eaf9df84cc4c.png)
+![image](https://user-images.githubusercontent.com/21292601/111924601-cffce500-8a7b-11eb-973a-7d1bdf91fad8.png)
 
 
 Standard Deviation
