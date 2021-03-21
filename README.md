@@ -1,6 +1,10 @@
 # python-5e-NPC-generator
 5e NPC stats generator in python
 
+This is the secret sauce: 
+
+stats = sorted(([sum(sorted([random.randint(1,6) for _ in range (4)])[1:]) for _ in range(6)]),reverse=True)
+
 I made this tool to quickly whip up an NPC block as a quick fix in case your players tend to latch on to throwaway NPCs... :)
 
 TODO: add stats limiter (weak, medium, strong, epic) option
