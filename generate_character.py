@@ -57,11 +57,11 @@ def nice_print(character):
     limiter = ''
     stat_total = (character['str'] + character['dex'] + character['con'] + character['int'] + character['wis'] + character['cha'])
     if stat_total <= 64:
-        limiter = 'weak'
+        limiter = 'weaker'
     elif (stat_total > 64) and (stat_total < 80):
         limiter = 'medium'
     elif stat_total >= 80:
-        limiter = 'strong'
+        limiter = 'formidable'
     elif stat_total > 100:
         limiter = 'epic'
     print("%sSTR%s : %s%s%s" % (Colors.ok_blue,Colors.end_c,Colors.ok_green,character['str'],Colors.end_c))
