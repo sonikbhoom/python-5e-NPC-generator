@@ -8,7 +8,8 @@ I made this tool to quickly whip up an NPC stats block as a quick fix in case yo
 
 TODO: add stats limiter (weak, medium, strong, epic) option
 
-This is the secret sauce of the generator: 
+This is the secret sauce of the generator:
+
    stats = sorted(([sum(sorted([random.randint(1,6) for _ in range (4)])[1:]) for _ in range(6)]),reverse=True)
 
 10000 Iterations:
