@@ -12,13 +12,13 @@ This is the secret sauce of the generator:
 
    stats = sorted(([sum(sorted([random.randint(1,6) for _ in range (4)])[1:]) for _ in range(6)]),reverse=True)
 
-10000 Iterations:
+10000 iterations:
 
 
 ![image](https://user-images.githubusercontent.com/21292601/111924601-cffce500-8a7b-11eb-973a-7d1bdf91fad8.png)
 
 
-Standard Deviation
+and a pretty bell-curve (Standard Deviation)
 
 
 ![image](https://user-images.githubusercontent.com/21292601/111924472-24539500-8a7b-11eb-8779-6a9a3b71dd87.png)
