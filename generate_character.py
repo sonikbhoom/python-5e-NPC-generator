@@ -34,7 +34,7 @@ char_maps['paladin']   = ['str','cha','con','wis','int','dex']
 char_maps['pal_dex']   = ['str','cha','con','wis','int','dex']
 char_maps['ranger']    = ['dex','con','wis','int','str','cha']
 char_maps['rogue']     = ['dex','con','wis','int','str','cha']
-char_maps['srocerer']  = ['cha','con','dex','int','wis','str']
+char_maps['sorcerer']  = ['cha','con','dex','int','wis','str']
 char_maps['warlock']   = ['cha','con','dex','int','wis','str']
 char_maps['wizard']    = ['int','con','dex','wis','cha','str']
 
